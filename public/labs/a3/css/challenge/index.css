@@ -1,0 +1,335 @@
+.rotate-paragraph {
+    width: 250px;
+    height: 250px;
+    transform: rotate(90deg);
+}
+
+.rotate-list {
+    transform: rotate(12deg);
+    width: 100px;
+    background-color: red;
+    color: white;
+}
+
+.rotate-list1 {
+    transform: rotate(-33deg);
+    width: 100px;
+    background-color: red;
+    color: white;
+}
+
+.rotate-list-items li {
+    width: 100px;
+    text-align: right;
+}
+.rotate-list-items li:nth-child(1) {
+    transform: rotate(-10deg);
+    background-color: yellow;
+}
+.rotate-list-items li:nth-child(2) {
+    transform: rotate(2deg);
+    background-color: blue;
+    color: white;
+}
+.rotate-list-items li:nth-child(3) {
+    transform: rotate(10deg);
+    background-color: red;
+}
+
+.rotate-image {
+    transform: rotate(-10deg);
+}
+
+
+.rotate-image1 {
+    transform: rotate(30deg);
+}
+
+.rotate-table {
+    position: relative;
+    left: 50px;
+    transform: rotate(15deg);}
+.rotate-table tr:nth-child(1) {
+    background-color: black;
+    color: white;}
+.rotate-table tr:nth-child(n+2) {
+    background-color: yellow;}
+.rotate-table tr:nth-child(n+5) {
+    background-color: blue;
+    color: white;}
+.rotate-table tr:nth-child(n+8) {
+    background-color: red;}
+.rotate-table tr:nth-child(n+11) {
+    background-color: green;
+    color: white;
+}
+
+.gradients-linear {
+    background: linear-gradient(yellow, red);
+    width: 200px;
+    height: 200px;
+}
+
+.gradients-linear1 {
+    background: linear-gradient(pink, magenta);
+    width: 200px;
+    height: 200px;
+}
+
+.gradients-positioned {
+    background:
+        radial-gradient(at top left, blue, red);
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+
+.gradients-positioned1 {
+    background:
+        radial-gradient(at bottom right, violet, lightblue);
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+
+.animation-keyframes {
+    position: relative;
+    top: 0px;
+    animation-duration: 7s;
+    animation-name: slidein;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    color: white;
+}
+
+@keyframes slidein {
+    from {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 100%;
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+        color: black;
+    }
+
+    50% {
+        position: relative;
+        top: -200px;
+        font-size: 300%;
+        margin-left: 25%;
+        width: 400px;
+        height: 400px;
+        background-color: blue;
+        color: white;
+    }
+
+    to {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 0%;
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        color: white;
+    }
+}
+
+.wd-docker {
+    background-color: rgb(113, 208, 211);
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    animation-name: spiral;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    margin: 100px;
+    animation-direction: alternate;
+  }
+  
+  @keyframes spiral {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .flex-container {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+}
+.flex-box {
+    border: 5px gray solid;
+    margin: 10px;
+    padding: 10px;
+}
+.flex-box-1 {
+    background-color: yellow;
+}
+.flex-box-2 {
+    background-color: blue;
+    color: white;
+}
+.flex-box-3 {
+    background-color: red;
+    color: white;
+}
+
+.flex-container1 {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+}
+
+.flex-container2 {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container3 {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: end;
+}
+
+.flex-container4 {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-container5 {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-container6 {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.flex-container7 {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.flex-container8 {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.flex-container9 {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+}
+
+.flex-container9 > .flex-box{
+    flex-basis: 100%;
+}
+
+@media (min-width: 0px) and (max-width: 600px) {
+    body {
+        background-color: yellow;
+    }
+    .media-query {
+        background-color: red;
+        color: white;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+    body {
+        background-color: blue;
+        color: white;
+    }
+    .media-query {
+        background-color: yellow;
+        color: black;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    body {
+        background-color: red;
+        color: white;
+    }
+    .media-query {
+        background-color: blue;
+        color: white;
+    }
+}
+
+
+@media (min-width: 0px) and (max-width: 600px) {
+ 
+    .media-query1 {
+        background-color: rgb(0, 255, 55);
+        color: white;
+    }
+
+    .media-div {
+        background-color: rgb(252, 139, 2);
+        opacity: 100%;
+        height: 400px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+
+    .media-query1 {
+        background-color: rgb(0, 255, 55);
+        color: white;
+    }
+
+    .media-div {
+        background-color: rgb(252, 139, 2);
+        opacity: 60%;
+        height: 200px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+
+    .media-query1 {
+        background-color: rgb(0, 255, 55);
+        color: white;
+    }
+
+    .media-div {
+        background-color: rgb(252, 139, 2);
+        opacity: 20%;
+        height: 100px;
+    }
+}

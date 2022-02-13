@@ -76,6 +76,19 @@
     height: 200px;
 }
 
+.gradients-radial {
+    background: radial-gradient(yellow, green);
+    width: 200px;
+    height: 200px;
+}
+
+.gradients-radial1 {
+    background: radial-gradient(rgb(0, 255, 242), rgb(255, 180, 81));
+    width: 200px;
+    height: 200px;
+}
+
+
 .gradients-positioned {
     background:
         radial-gradient(at top left, blue, red);

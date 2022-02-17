@@ -47,3 +47,9 @@ left: 0.8rem;
 .pav-logo{
     height: 4rem;
 }
+
+
+.wd-post.row{
+  margin-left: 0;
+  margin-right: 0;
+}

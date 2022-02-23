@@ -24,3 +24,6 @@ yarn-error.log*
 
 # VS Code Files
 .vscode
+
+# Removing fontawesome from Git commit
+public/vendors/fontawesome

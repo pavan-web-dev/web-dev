@@ -1,0 +1,57 @@
+.basic-image{
+  height: 4rem;
+  width: 4rem;
+}
+
+.basic-follow{
+  border-radius: 3em;
+}
+
+.wd-explore .wd-search{
+  position: relative;
+}
+
+
+.wd-explore .wd-search input {
+height: 2.3rem;
+border-radius: 1.1rem;
+}
+
+.wd-explore .wd-search input[type='text']::-webkit-input-placeholder {
+  color: rgb(58, 58, 58);
+  vertical-align: middle;
+}
+
+
+.wd-explore .wd-search .fa.fa-search {
+position: absolute;
+top: 0.7rem;
+left: 0.8rem;
+}
+
+.pav-searchinput{
+  background-color: rgb(230, 230, 230);
+  color: #575e64;
+  border-bottom: 0;
+  border-right: 0;
+}
+
+.image-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.basic-coloroveride{
+  background-color: rgb(40,36,36);
+}
+
+.basic-removepadding{
+  margin-bottom: 0;
+}

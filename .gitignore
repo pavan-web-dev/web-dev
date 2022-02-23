@@ -24,3 +24,5 @@ yarn-error.log*
 
 # VS Code Files
 .vscode
+
+/public/vendors

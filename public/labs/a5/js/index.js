@@ -130,6 +130,8 @@ console.log(string3);
 console.log('Find Index');
 const fourIndex = numberArray1.findIndex(a => a === 4);
 const string3Index = stringArray1.findIndex(a => a === 'string3');
+console.log(fourIndex);
+console.log(string3Index);
 
 console.log('Filter Function');
 const numbersGreaterThan2 = numberArray1.filter(a => a > 2);

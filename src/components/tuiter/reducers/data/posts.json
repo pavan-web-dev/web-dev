@@ -8,9 +8,11 @@
       "image": "https://i.ibb.co/pLyt9vw/spacexhelmet.jpg",
       "post_title": "Countdown Inspiration4 Mission to Space | Netflix Official Site",
       "post_content": "From training to launch to landing, this all-access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space ....",
-      "num_comment": "4.2K",
-      "num_retweet": "3.5K",
-      "num_likes": "37.5K"
+      "num_comment": 420,
+      "num_retweet": 355,
+      "num_likes": 375,
+      "liked": false,
+      "_id":"quickId1"
     },
     {
       "avatar_location": "https://i.ibb.co/KzFqB06/nyc.png",
@@ -19,8 +21,10 @@
       "time": "23h",
       "title": "Grimes seen reading Karl Marx following split with world's richest man Elon Musk",
       "image": "https://i.ibb.co/QNXb7CC/grimes.jpg",
-      "num_comment": "965",
-      "num_retweet": "2.4K",
-      "num_likes": "4K"
+      "num_comment": 965,
+      "num_retweet": 240,
+      "num_likes": 411,
+      "liked": false,
+      "_id":"quickId2"
     }
   ]

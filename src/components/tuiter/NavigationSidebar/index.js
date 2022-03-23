@@ -44,10 +44,10 @@ const NavigationSidebar = ({
                     </a>
                     
 
-                    <a className={`list-group-item ${active === 'profile' ? 'active' : ''}`} href="/">
+                    <Link className={`list-group-item ${active === 'profile' ? 'active' : ''}`} to="/tuiter/profile">
                     <i className="fas fa-user"></i>
                     <span className="d-none d-xl-inline ps-2">Profile</span>
-                    </a>
+                    </Link>
                     
 
                     <a className={`list-group-item ${active === 'more' ? 'active' : ''}`} href="/">

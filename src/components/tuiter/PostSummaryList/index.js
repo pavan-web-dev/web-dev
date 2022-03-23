@@ -1,16 +1,16 @@
 import PostSummaryItem from "./PostSummaryItem.js";
-import exploreItems from "./posts.json"
 import React from "react";
+import { useSelector } from "react-redux";
 
 const PostSummaryList = () => {
-
+    const exploreItems = useSelector(state => state.postssummary);
     return (
         <>
         {
             exploreItems.map((item) => {
             return(
             <div className="wd-post row p-2">
-                <PostSummaryItem post={item} />
+                <PostSummaryItem post={item} key={item._id}/>
             </div>
                 )
             }       

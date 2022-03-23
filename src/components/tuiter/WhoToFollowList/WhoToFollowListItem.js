@@ -4,6 +4,7 @@ const WhoToFollowListItem = ({
         avatarIcon: "../tuiter/java.jpg",
         userName: "Java", 
         handle: "Java" ,
+        _id: "dreamwho1"
     }
     }) => {
         
@@ -13,7 +14,7 @@ const WhoToFollowListItem = ({
         <div className="row">
             <div className="col-3"><img src={who.avatarIcon} alt={who.userName} className="img-fluid rounded-circle basic-image" /></div>
             <div className="col-5">
-                <div><span className="fw-bold">{who.userName}</span>
+                <div><span className="fw-bold pe-2">{who.userName}</span>
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                             fill="currentColor" className="bi bi-patch-check-fill" viewBox="0 0 16 16">

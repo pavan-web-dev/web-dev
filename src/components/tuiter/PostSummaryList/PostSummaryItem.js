@@ -5,7 +5,8 @@ const PostSummaryItem = ({
     userName: "ReactJS", 
     time: "2h", 
     title: "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs", 
-    image: "https://i.ibb.co/VpNJvJH/react-logo.png"}
+    image: "https://i.ibb.co/VpNJvJH/react-logo.png",
+    _id: "summaryid1"}
 }) => {
 
     return (
@@ -13,7 +14,7 @@ const PostSummaryItem = ({
     <div className="col-9">
         {post.topic ? <div className="text-muted">{post.topic}</div> : ''}
         <div>
-            <span className="fw-bold">{post.userName}</span>
+            <span className="fw-bold pe-2">{post.userName}</span>
             <span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     className="bi bi-patch-check-fill mb-1" viewBox="0 0 16 16">

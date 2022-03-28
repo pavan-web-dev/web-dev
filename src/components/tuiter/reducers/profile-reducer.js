@@ -10,6 +10,7 @@ const profileDummy =  {
     dateJoined: '4/2022',
     followingCount: 10000,	
     followersCount: 9998,
+    website: 'www.koala.com',
     _id: "koala1"
   }
 
@@ -19,7 +20,7 @@ const profileReducer = (state = profileDummy, action) =>{
             const splitName = action.name.split(' ')
             const fname = splitName[0]
             const lname = splitName[1]
-            return {...state, bio: action.bio, firstName: fname, lastName: lname}
+            return {...state, bio: action.bio, firstName: fname, lastName: lname, location: action.location, dateOfBirth: action.dateOfBirth, website: action.website}
         default:
             return(state);
     }

@@ -9,9 +9,13 @@ const EditProfileItem = () => {
         = useState(profile.firstName + ' ' +profile.lastName);
     let [bio, setBio]
         = useState(profile.bio);
+
+    let [location, setLocation] = useState(profile.location);
+    let [website, setWebsite] = useState(profile.website);
+    let [dateOfBirth, setdateOfBirth] = useState(profile.dateOfBirth);
     const dispatch = useDispatch();
     const dispatchSaveData = () => {
-        dispatch({type: 'edit-profile', name, bio});
+        dispatch({type: 'edit-profile', name, bio, location, website, dateOfBirth});
     }
     return(
         <>
@@ -48,6 +52,18 @@ const EditProfileItem = () => {
             <div className="form-group mt-4">
             <label for="Bio">Bio</label>
             <textarea class="form-control" id="Bio" value={bio} onChange={(event) => setBio(event.target.value)}/>
+            </div>
+            <div className="form-group mt-4">
+            <label for="Location">Location</label>
+            <textarea class="form-control" id="Location" value={location} onChange={(event) => setLocation(event.target.value)}/>
+            </div>
+            <div className="form-group mt-4">
+            <label for="Website">Website</label>
+            <textarea class="form-control" id="Website" value={website} onChange={(event) => setWebsite(event.target.value)}/>
+            </div>
+            <div className="form-group mt-4">
+            <label for="DOB">DOB</label>
+            <textarea class="form-control" id="DOB" value={dateOfBirth} onChange={(event) => setdateOfBirth(event.target.value)}/>
             </div>
         </>
     );   

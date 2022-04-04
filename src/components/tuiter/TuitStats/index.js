@@ -1,10 +1,23 @@
 import React from "react";
 import { useDispatch } from "react-redux";
+import { updateTuit } from "../actions/tuits-actions";
 
 const TuitStats = ({tuit}) => {
     const dispatch = useDispatch();
     const likeTuit = () => {
-        dispatch({type: 'like-tuit', tuit});
+        if(!tuit.liked){
+        updateTuit(dispatch, {...tuit, num_likes: tuit.num_likes + 1, liked: !tuit.liked});   
+        }else{
+        updateTuit(dispatch, {...tuit, num_likes: tuit.num_likes - 1, liked: !tuit.liked});
+        }
+      };
+    
+    const dislikeTuit = () => {
+        if(!tuit.disliked){
+        updateTuit(dispatch, {...tuit, dis_num_likes: tuit.dis_num_likes + 1, disliked: !tuit.disliked});   
+        }else{
+        updateTuit(dispatch, {...tuit, dis_num_likes: tuit.dis_num_likes - 1, disliked: !tuit.disliked});
+        }
       };
     return(
         <div className="row mt-2">
@@ -31,8 +44,24 @@ const TuitStats = ({tuit}) => {
                 </span>
                     <div className="ps-3">{tuit.num_likes}</div>
                 </div>
+                
+                <div className="col-2 d-flex justify-start align-items-center justify-content-center">
+                <span onClick={dislikeTuit}>
+                    {
+                    tuit.disliked &&
+                    <i className="fas fa-thumbs-down me-1"
+                        style={{color: 'yellow'}}></i>
+                    }
+                    {
+                    !tuit.disliked &&
+                    <i className="fas fa-thumbs-down me-1"></i>
+                    }
+                </span>
+                    <div className="ps-3">{tuit.dis_num_likes}</div>
+                </div>
+                
 
-                <div className="col-3 d-flex align-items-center justify-content-center">
+                <div className="col-1 d-flex align-items-center justify-content-center">
                     <i className="fas fa-upload"></i>
                 </div>
             </div>

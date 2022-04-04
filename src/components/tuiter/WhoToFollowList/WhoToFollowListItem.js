@@ -1,7 +1,7 @@
 import React from "react";
 const WhoToFollowListItem = ({
     who = {
-        avatarIcon: "../tuiter/java.jpg",
+        avatarIcon: "../tuiter2/java.jpg",
         userName: "Java", 
         handle: "Java" ,
         _id: "dreamwho1"
